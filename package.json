@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap-admin-template",
+  "version": "1.0.0",
+  "description": "bootstrap-admin-template",
+  "repository": "",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "browser-sync": "^2.12.10",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "bootstrap-admin-template",
+  "description": "bootstrap-admin-template",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.2"
+  }
+}
