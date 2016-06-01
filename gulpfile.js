@@ -6,7 +6,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "./src/views"
+            baseDir: "./views"
         }
     });
 });
@@ -14,5 +14,5 @@ gulp.task('browser-sync', function() {
 gulp.task('sass', function () {
     return gulp.src('./src/sass/app.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./views/css'));
+        .pipe(gulp.dest('./public/css'));
 });

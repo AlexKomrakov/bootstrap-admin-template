@@ -9,6 +9,7 @@ app.use(express.static('public'));
 app.set("twig options", {
     strict_variables: false
 });
+Twig.cache(false);
 
 // Just a visit counter
 var nbVisits = 0;
