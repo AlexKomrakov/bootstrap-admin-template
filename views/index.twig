@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <script src="/js/all.min.js" type="application/javascript"></script>
     <link href="/css/app.css" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">-->
-    <style>
-
-    </style>
 </head>
 <body>
 <div class="container p-t-2">
@@ -78,13 +73,67 @@
     <h5 class="p-t-1">Custom forms</h5>
     <div>{% include 'forms/custom_forms.twig' %}</div>
 </div>
-{# TODO Implement other components #}
-{#Dropdowns#}
-{#Jumbotron#}
-{#Label#}
-{#Alerts#}
-{#Card#}
-{#Navs#}
+<div class="container p-t-2">
+    <h2>Input group</h2>
+    <h5 class="p-t-1">Basic example</h5>
+    <div>{% include 'input_group/basic_example.twig' %}</div>
+    <h5 class="p-t-1">Checkboxes and radio addons</h5>
+    <div>{% include 'input_group/checkboxes_and_radio_addons.twig' %}</div>
+    <h5 class="p-t-1">Sizing</h5>
+    <div>{% include 'input_group/sizing.twig' %}</div>
+    <h5 class="p-t-1">Button addons</h5>
+    <div>{% include 'input_group/button_addons.twig' %}</div>
+</div>
+<div class="container p-t-2">
+    <h2>Dropdowns</h2>
+    <div>{% include 'dropdowns/dropdowns.twig' %}</div>
+</div>
+<div class="container p-t-2">
+    <h2>Jumbotron</h2>
+    <div>{% include 'jumbotron/jumbotron.twig' %}</div>
+</div>
+<div class="container p-t-2">
+    <h2>Label</h2>
+    <div>{% include 'labels/labels.twig' %}</div>
+</div>
+<div class="container p-t-2">
+    <h2>Alerts</h2>
+    <div>{% include 'alerts/alerts.twig' %}</div>
+</div>
+<div class="container p-t-2">
+    <h2>Card</h2>
+    <h5 class="p-t-1">Content types</h5>
+    <div>{% include 'card/content_types.twig' %}</div>
+    <h5 class="p-t-1">Header and footer</h5>
+    <div>{% include 'card/header_and_footer.twig' %}</div>
+    <h5 class="p-t-1">Image caps</h5>
+    <div>{% include 'card/image_caps.twig' %}</div>
+    <h5 class="p-t-1">Image overlays</h5>
+    <div>{% include 'card/image_overlays.twig' %}</div>
+    <h5 class="p-t-1">Inverted text</h5>
+    <div>{% include 'card/inverted_text.twig' %}</div>
+    <h5 class="p-t-1">Background variants</h5>
+    <div>{% include 'card/background_variants.twig' %}</div>
+    <h5 class="p-t-1">Groups</h5>
+    <div>{% include 'card/groups.twig' %}</div>
+    <h5 class="p-t-1">Decks</h5>
+    <div>{% include 'card/decks.twig' %}</div>
+    <h5 class="p-t-1">Columns</h5>
+    <div>{% include 'card/columns.twig' %}</div>
+</div>
+<div class="container p-t-2">
+    <h2>Navs</h2>
+    <h5 class="p-t-1">Base nav</h5>
+    <div>{% include 'navs/base_nav.twig' %}</div>
+    <h5 class="p-t-1">Inline</h5>
+    <div>{% include 'navs/inline.twig' %}</div>
+    <h5 class="p-t-1">Pills</h5>
+    <div>{% include 'navs/pills.twig' %}</div>
+    <h5 class="p-t-1">Stacked pills</h5>
+    <div>{% include 'navs/stacked_pills.twig' %}</div>
+    <h5 class="p-t-1">Tabs</h5>
+    <div>{% include 'navs/tabs.twig' %}</div>
+</div>
 <div class="container p-t-2">
     <h2>Navbar</h2>
     <h5 class="p-t-1">Supported content</h5>
