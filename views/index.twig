@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <script src="/js/all.min.js" type="application/javascript"></script>
-    <link href="/css/app.css" rel="stylesheet">
-</head>
-<body>
+{% extends "layout.twig" %}
+{% block content %}
 <div class="container p-t-2">
     <h2>Buttons</h2>
     <h5 class="p-t-1">Buttons</h5>
@@ -147,19 +136,42 @@
 </div>
 <div class="container p-t-2">
     <h2>Breadcrumb</h2>
-    <h5 class="p-t-1">Breadcrumb</h5>
     <div>{% include 'breadcrumb/breadcrumb.twig' %}</div>
 </div>
+<div class="container p-t-2">
+    <h2>Pagination</h2>
+    <h5 class="p-t-1">Default</h5>
+    <div>{% include 'pagination/default_pagination.twig' %}</div>
+    <h5 class="p-t-1">Sizing</h5>
+    <div>{% include 'pagination/sizing.twig' %}</div>
+    <h5 class="p-t-1">Pager</h5>
+    <div>{% include 'pagination/pager.twig' %}</div>
+</div>
+<div class="container p-t-2">
+    <h2>Progress</h2>
+    <div>{% include 'progress/example.twig' %}</div>
+</div>
+<div class="container p-t-2">
+    <h2>List group</h2>
+    <div>{% include 'list_group/example.twig' %}</div>
+</div>
+<div class="container p-t-2">
+    <h2>Modal</h2>
+    <div>{% include 'modal/example.twig' %}</div>
+</div>
+<div class="container p-t-2">
+    <h2>Tooltips</h2>
+    {# TODO Fix. Not working #}
+    <div>{% include 'tooltips/example.twig' %}</div>
+</div>
+<div class="container p-t-2">
+    <h2>Popovers</h2>
+    {# TODO Fix. Not working #}
+    <div>{% include 'popovers/example.twig' %}</div>
+</div>
 {# TODO Implement other components #}
-{#Pagination#}
-{#Progress#}
-{#List group#}
-{#Modal#}
 {#Scrollspy#}
-{#Tooltips#}
-{#Popovers#}
 {#Collapse#}
 {#Carousel#}
 {#Utilities#}
-</body>
-</html>
+{% endblock %}

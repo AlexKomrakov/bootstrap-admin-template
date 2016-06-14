@@ -1,0 +1,12 @@
+.aside-container {
+  display: table;
+  table-layout: fixed;
+  border-spacing: 0;
+  width: 100%;
+}
+.aside {
+  display: table-cell;
+  vertical-align: top;
+  float: none;
+  height: 100%;
+}

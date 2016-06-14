@@ -17,11 +17,14 @@ gulp.task('sass', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./public/css'));
 });
+
 gulp.task('js', function () {
     return gulp.src([
         './bower_components/jquery/dist/jquery.min.js',
-        './bower_components/bootstrap/dist/js/bootstrap.min.js'
+        './bower_components/bootstrap/dist/js/bootstrap.js'
     ])
     .pipe(concat('all.min.js'))
     .pipe(gulp.dest('./public/js'));
 });
+
+gulp.task('default', ['sass', 'js']);

@@ -20,5 +20,11 @@ app.get('/', function(req, res) {
         visits: nbVisits
     });
 });
+app.get('/admin', function(req, res) {
+    nbVisits++;
+    res.render('admin.twig', {
+        visits: nbVisits
+    });
+});
 
 app.listen(8080);

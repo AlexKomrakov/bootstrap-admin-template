@@ -1,0 +1,10 @@
+// Static height and width utilities based on bootstrap 4 $spacers
+// h-0, ... h-3, h-100
+// w-0, ... w-3, w-100
+@each $prop, $abbrev in (height: h, width: w) {
+  @each $size, $lengths in $spacers {
+    $length-x: map-get($lengths, x) * 10;
+    .#{$abbrev}-#{$size} { #{$prop}: $length-x !important; }
+    .#{$abbrev}-100 { #{$prop}: 100% !important; }
+  }
+}
