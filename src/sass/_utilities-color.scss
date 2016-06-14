@@ -1,0 +1,16 @@
+@each $name, $color in (
+        bg-primary: $brand-primary,
+        bg-success: $brand-success,
+        bg-info: $brand-info,
+        bg-warning: $brand-warning,
+        bg-danger: $brand-danger
+) {
+  @include bg-variant('.#{$name} .dk'  , darken($color, $dk-modifier));
+  @include bg-variant('.#{$name}.dk'   , darken($color, $dk-modifier));
+  @include bg-variant('.#{$name} .dker', darken($color, $dker-modifier));
+  @include bg-variant('.#{$name}.dker' , darken($color, $dker-modifier));
+  @include bg-variant('.#{$name} .lt'  , lighten($color, $lt-modifier));
+  @include bg-variant('.#{$name}.lt'   , lighten($color, $lt-modifier));
+  @include bg-variant('.#{$name} .lter', lighten($color, $lter-modifier));
+  @include bg-variant('.#{$name}.lter' , lighten($color, $lter-modifier));
+}

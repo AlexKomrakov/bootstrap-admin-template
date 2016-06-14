@@ -2,8 +2,21 @@
 {% block content %}
 
     <div class="aside-container h-100">
-        <div class="bg-info aside w-1">
-            ASIDE W-1
+        <div class="bg-info dk aside w-1 navbar navbar-dark">
+            <ul class="nav navbar-nav">
+                <li class="navbar-brand">
+                    ASIDE W-1
+                </li>
+                <li>
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Another link</a>
+                </li>
+            </ul>
         </div>
         <div class="h-100 has-footer">
             <div>
@@ -22,9 +35,24 @@
                         </div>
                     </div>
                 </div>
-                Content
+                <div class="col-xs-12">
+                    {% for color in ['bg-primary', 'bg-success', 'bg-info', 'bg-warning', 'bg-danger'] %}
+                        <div class="col-sm-3"><p>.{{ color }}</p>
+                            <div class="{{ color }}">
+                                <div class="dker m-n wrapper">.dker</div>
+                                <div class="dk m-n wrapper">.dk</div>
+                                <div class=" m-n wrapper">.bg-primary</div>
+                                <div class="lt m-n wrapper">.lt</div>
+                                <div class="lter m-n wrapper">.lter</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="col-xs-12 p-a-1">
+                    <h5 class="m-a-0">Content</h5>
+                </div>
             </div>
-            <div class="h-1 bg-primary">
+            <div class="h-1 bg-info dker">
                 Footer
             </div>
         </div>
