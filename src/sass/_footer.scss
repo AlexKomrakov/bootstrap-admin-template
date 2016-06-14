@@ -1,0 +1,10 @@
+.has-footer {
+  > * {
+    &:last-child {
+      // Firefox table layout fix
+      height: 1px;
+    }
+    display: table-row;
+  }
+  display: table;
+}
